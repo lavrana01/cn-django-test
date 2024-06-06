@@ -1,1 +1,1 @@
-web: gunicorn abc.wsgi:application
+web: gunicorn cn_django_test.wsgi:application
