@@ -1,1 +1,1 @@
-web: gunicorn cn_django_test.wsgi:application
+web: python3 manager
