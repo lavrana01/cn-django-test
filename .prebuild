@@ -1,2 +1,2 @@
-yum update -y
-echo "pre build commands executed successfully"
+apt-get update
+echo "Dockerfile build successful on Amazon Linux"
