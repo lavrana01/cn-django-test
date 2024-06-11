@@ -1,0 +1,2 @@
+yum update -y
+echo "pre build commands executed successfully"
