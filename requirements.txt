@@ -110,7 +110,7 @@ websockets==11.0.2
 scrapy==2.11.1
 twisted==22.10.0
 pydantic-core==2.6.0
-xmltodict==1.0.0
+xmltodict==0.11.0
 openai==0.28.0
 transformers==4.31.0
 datasets==2.14.4
