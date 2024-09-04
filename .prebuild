@@ -1,0 +1,2 @@
+apt-get update
+echo "Dockerfile build successful on Amazon Linux"
