@@ -22,7 +22,7 @@ pipeline {
                     docker rm ${DOCKER_CONTAINER_NAME} || true
 
                     # Pull the latest code and build a new Docker image
-                    cd /path/to/your/project
+                    cd /home/ec2-user/cn-django-test
                     git pull origin main
                     docker-compose down
                     docker-compose up -d --build
