@@ -22,7 +22,7 @@ pipeline {
 
                     # Pull the latest code and build a new Docker image
                     cd /home/ec2-user/cn-django-test
-                    git pull origin main
+                    sudo git pull origin main
                     sudo docker-compose down
                     sudo docker-compose up -d --build
                     EOF
