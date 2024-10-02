@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sshagent (credentials: ['0080f981-fc6f-4af0-b7fd-a28f67c64220']) {
                     sh '''
-                    ssh -o StrictHostKeyChecking=no ${EC2_HOST} << EOF
+                    ssh -o StrictHostKeyChecking=no ${EC2_HOST} <<EOF
                     # Stop existing Docker container
                     sudo docker stop ${DOCKER_CONTAINER_NAME} || true
                     sudo docker rm ${DOCKER_CONTAINER_NAME} || true
