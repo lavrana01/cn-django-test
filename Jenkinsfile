@@ -3,7 +3,7 @@ pipeline {
     environment {
         EC2_HOST = 'ec2-user@3.110.142.23'
         DOCKER_CONTAINER_NAME = 'cn-django-test-web-1'
-        GIT_REPO = 'git@github.com:lavrana01/cn-django-test'
+        GIT_REPO = 'https://github.com/lavrana01/cn-django-test'
     }
     stages {
         stage('Clone Repository') {
@@ -17,8 +17,8 @@ pipeline {
                     sh '''
                     ssh -o StrictHostKeyChecking=no ${EC2_HOST} << EOF
                     # Stop existing Docker container
-                    docker stop ${DOCKER_CONTAINER_NAME} || true
-                    docker rm ${DOCKER_CONTAINER_NAME} || true
+                    sudo docker stop ${DOCKER_CONTAINER_NAME} || true
+                    sudo docker rm ${DOCKER_CONTAINER_NAME} || true
 
                     # Pull the latest code and build a new Docker image
                     cd /home/ec2-user/cn-django-test
