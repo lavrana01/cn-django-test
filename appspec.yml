@@ -2,9 +2,14 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /path/to/deploy
+    destination: /home/ec2-user/cn-django-test
 
 hooks:
+  ApplicationStop:
+    - location: ./stop_docker.sh
+      timeout: 300
+      runas: root
+
   AfterInstall:
     - location: ./start_docker.sh
       timeout: 300
