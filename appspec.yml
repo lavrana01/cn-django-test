@@ -5,11 +5,6 @@ files:
     destination: /home/ec2-user/cn-django-test
 
 hooks:
-  ApplicationStop:
-    - location: ./stop_docke.sh
-      timeout: 300
-      runas: root
-
   BeforeInstall: []
 
   Install: []        # Explicitly leave this empty
@@ -19,5 +14,12 @@ hooks:
     - location: ./start_docker.sh
       timeout: 300
       runas: root
-
   ValidateService: []  # Explicitly leave this empty
+  
+
+  ApplicationStop:
+    - location: ./stop_docke.sh
+      timeout: 300
+      runas: root
+
+
