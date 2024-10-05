@@ -18,7 +18,7 @@ hooks:
   
 
   ApplicationStop:
-    - location: ././stop_docker.sh
+    - location: ./stop_docker.sh
       timeout: 300
       runas: root
 
