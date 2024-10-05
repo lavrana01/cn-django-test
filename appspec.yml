@@ -10,10 +10,7 @@ hooks:
       timeout: 300
       runas: root
 
-  BeforeInstall: 
-    - location: ./pre_install.sh
-      timeout: 300
-      runas: root
+  BeforeInstall: []
 
   Install: []        # Explicitly leave this empty
   AfterInstall: []   # Explicitly leave this empty
