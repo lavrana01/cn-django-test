@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo yum update -y
+echo "Running pre_install.sh"
