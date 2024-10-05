@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /home/ec2-user/cn-django-test
     destination: /home/ec2-user/cn-django-test
 
 hooks:
@@ -18,7 +18,7 @@ hooks:
   
 
   ApplicationStop:
-    - location: ./stop_docke.sh
+    - location: ././stop_docker.sh.sh
       timeout: 300
       runas: root
 
