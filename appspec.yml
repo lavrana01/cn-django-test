@@ -10,12 +10,17 @@ hooks:
       timeout: 300
       runas: root
 
-  Install: []        # Leave empty if not needed
-  AfterInstall: []   # Leave empty if not needed
+  BeforeInstall: 
+    - location: ./pre_install.sh
+      timeout: 300
+      runas: root
+
+  Install: []        # Explicitly leave this empty
+  AfterInstall: []   # Explicitly leave this empty
 
   ApplicationStart:
     - location: ./start_docker.sh
       timeout: 300
       runas: root
 
-  ValidateService: []  # Leave empty if not needed
+  ValidateService: []  # Explicitly leave this empty
