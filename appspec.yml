@@ -5,8 +5,11 @@ files:
     destination: /app/
 
 hooks:
-  BeforeInstall: []
-
+  BeforeInstall: 
+    - location: ./pre_install.sh
+      timeout: 300
+      runas: root
+      
   Install: []       
   AfterInstall: []   
 

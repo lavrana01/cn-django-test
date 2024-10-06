@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "Running pre_install.sh"
+cd /home/ec2-user/cn-django-test
+sudo git pull
