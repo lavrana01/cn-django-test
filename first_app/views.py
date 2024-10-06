@@ -7,4 +7,4 @@ from django.http import HttpResponse
 def index(request):
     # test_task.delay()
 
-    return HttpResponse(f'LLM....Jenkins integrated with CodeDeploy and Deployment succesfull.! This is Jenkins Django Test.By - Lav aa.....CI CD test by lav - lav2828')
+    return HttpResponse(f'LLM....Jenkins integrated with CodeDeploy and Deployment succesfull.! This is Jenkins and CodeDeploy Django Test.By - Lav aa.....CI CD test by lav - lav2828')
